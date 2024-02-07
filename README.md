@@ -1,18 +1,18 @@
-<h1> Lesson 2.5: Network Troubleshooting  </h1>
+<h1> Lesson 3.2: Linux Navigation </h1>
 <h2> Summary</h2>
 
-<p1>By the end of this module, learners should be able to describe the essential components of a network, including devices (routers, switches, hubs, etc.), topologies, and common protocols. This foundational knowledge will serve as the basis for identifying where potential issues arise.</p1>
+<p1>In this lesson, students will learn how to navigate through a linux machine, understand what a distribution of linux is, and be able to update their linux machines.</p1>
 <br>
 
 <h2>Learning Objectives</h2>
 <ul>
-<li>Recognize Common Network Issues and Their Solutions.</li>
+<li>Students will acquire the essential skills to proficiently navigate through a Linux machine using the command line, understanding the hierarchical structure of directories and files.</li>
   <br>
-<li>Develop a Systematic Troubleshooting Methodology.</li><br>
+<li>Students will explore the variety of Linux distributions, understanding their unique features, tools, and the underlying similarities and differences among them.</li><br>
 
-<li>Implement Preventative Measures and Best Practices.</li><br>
+<li>Students will learn how to effectively update their Linux machines to ensure optimized performance, enhanced security, and access to the latest features and improvements.</li><br>
   
-<li>Become proficient in using a variety of network diagnostic tools such as ping, traceroute, netstat, Wireshark, and others.</li>
+<li>Objective Summary and Learning Outcome</li>
 
 </ul>
 
@@ -21,47 +21,40 @@
 <ul>
 <li>
 
-  **Ping**</li>
+  **Package Manager**</li>
   
 <li>
 
-**Wireshark**</li>
+**Update & Upgrade**</li>
   
 <li>
   
-**Traceroute**</li>
+**Repository**</li>
 
 <li>
 
-**Methodology**</li>
+**Root Directory**</li>
   
 <li>
   
-**Netstat**</li>
+**Path**</li>
 
 <li>
   
-**OSI Model**</li>
+**Relative Path**</li>
 
-</ul>
+<li>
+  
+**Linux Distribution**</li>
 
-<h2>NICE Framework KSAs</h2>
-<ul>
-<li>K0001 - Knowledge of computer networking concepts, protocols, and network security methodologies.</li>
-<br>
-<li>K0010 - Knowledge of communication methods, principles, and ideas that support the network infrastructure.</li>
-<br>
-<li>K0011 - Knowledge of capabilities and applications of network equipmentK0029	Knowledge of the organization's Local and Wide Area Network connections.</li>
-<br>
-<li>K0034 - Knowledge of network services and protocol interactions that provide network communications.</li>
-<br>
-<li>K0057 - Knowledge of network hardware devices and functions.</li>
-<br>
-<li>K0061 - Knowledge of how traffic flows across the network</li>
-<br>
-<li>K0111 - Knowledge of network tools</li>
-<br>
-<li>K0113 - Knowledge of different types of network communication</li>
+<li>
+  
+**File System**</li>
+
+<li>
+  
+**Directory**</li>
+
 </ul>
 
 
@@ -71,137 +64,95 @@
 
 
 <h2>Introduction</h2>
-Today, we'll delve deep into the world of network troubleshooting. As our reliance on networks grows, so does ensuring they run smoothly. Whether you're a budding IT professional or just curious about how networks function, today's lecture will equip you with the knowledge and skills to approach network issues methodically.
+Lesson 3.2 propels students into the core of the Linux operating system, enhancing their prowess in navigating the Linux file system, understanding the variety in Linux distributions, and mastering the essential practice of system updates. As we traverse the command line, explore distributions, and delve into update mechanisms, we are set to unfold a rich tapestry of knowledge that's fundamental to mastering Linux.
 
-<h2>Understanding Network Fundamentals and Architecture</h2>
-
-Before we can fix a problem, we need to understand the system. Every network, regardless of its size or complexity, is built upon foundational components:
-
-Devices are tangible components like routers, switches, and hubs. Each plays a unique role in directing, transmitting, or amplifying data.
+<h2>Commanding the Command Line</h2>
+The command line interface (CLI) is the powerhouse for Linux navigation. Here, we delve into a plethora of commands essential for proficient navigation:
 
 <ul>
-	<li><h4><ins>Topologies:</ins></li></h4>
+	<li><h4><ins>cd (Change Directory)</ins></h4></li>
 	<ul>
-		<li>This refers to the physical or logical layout of a network. The structure can influence where and how issues arise, whether it's a star, ring, or mesh topology.</li>
+		<li>Transition between directories.</li>
 	</ul>
-	<li><h4><ins>Protocols:</ins></li></h4>
+	<li><h4><ins>ls (list)</ins></h4></li>
 	<ul>
-		<li> These are the rules that govern data transmission. Familiar names like TCP/IP or HTTP dictate how data packets are sent, received, and interpreted.</li>
+		<li>Enumerate files and directories, with options like -l for long listing and -a to display hidden files.</li>
+	</ul>
+	<li><h4><ins>pwd (Print Working Directory)</ins></h4></li>
+	<ul>
+		<li>Display the current directory path.</li>
+	</ul>
+	<li><h4><ins>mkdir (Make Directory) & rmdir (Remove Directory)</ins></h4></li>
+	<ul>
+		<li>Create and remove directories.</li>
+	</ul>
+	<li><h4><ins>touch</ins></h4></li>
+	<ul>
+		<li>Create new, empty files.</li>
+	</ul>
+	<li><h4><ins>rm (Remove)</ins></h4></li>
+	<ul>
+		<li>Delete files and directories, with -r option for recursive removal.</li>
+	</ul>
+	<li><h4><ins>find</ins></h4></li>
+	<ul>
+		<li>Search for files and directories.</li>
+	</ul>
+	<li><h4><ins>grep</ins></h4></li>
+	<ul>
+		<li>Search text using patterns.</li>
+	</ul>
+	<li><h4><ins>cat, head, tail</ins></h4></li>
+	<ul>
+		<li>Display file content.</li>
+	</ul>
+	<li><h4><ins>nano, vim</ins></h4></li>
+	<ul>
+		<li>Text editors for modifying file content.</li>
 	</ul>
 </ul>
+<br>
+Understanding the structure and permissions in the Linux file system, and the significance of the root directory, is crucial for effective system navigation and management.
 
 
-<h2>Mastering Diagnostic Tools and Software</h2>
-Network professionals have tools like a doctor using a stethoscope or X-ray machine. Some of the most essential include:
-
+	
+<h2>Diverse Destinations: Linux Distributions:</h2>
+Linux distributions, often referred to as distros, are various flavors of Linux each packaged with unique sets of software applications, utilities, and an installation system. They cater to different user needs and operational environments:
 <ul>
-	<li><h4><ins>Ping:</ins></h4></li>
-	<ul>
-		<li>Tests the reachability of a host and measures the roundtrip time for packets.
-		</li>
-	</ul>
-	<li><h4><ins>Traceroute:</ins></h4></li>
-	<ul>
-		<li>Displays the path that a packet takes to reach a destination. 
-		</li>
-	</ul>
-	<li><h4><ins>Netstat:</ins></h4></li>
-	<ul>
-		<li>Provides network statistics and information about current network connections. 
-		</li>
-	</ul>
-	<li><h4><ins>Wireshark:</ins></h4></li>
-	<ul>
-		<li>A packet analyzer that lets you see what's happening on your network at a microscopic level.
-		</li>
-	</ul>
+	<li><h4><ins>Ubuntu</ins></h4></li>
+	<ul><li>Renowned for its user-friendliness and robust community support, ideal for newcomers to Linux, and extensively used in server environments.</li></ul>
+	<li><h4><ins>Fedora</ins></h4></li>
+	<ul><li>Known for its cutting-edge software, it's a solid choice for developers and system administrators.</li></ul>
+	<li><h4><ins>Debian</ins></h4></li>
+	<ul><li>Praised for its stability and a vast repository of software packages, it's a favorite among server environments and seasoned Linux users.</li></ul>
+	<li><h4><ins>CentOS</ins></h4></li>
+	<ul><li>A free, community-supported computing platform, binary compatible with its upstream source, Red Hat Enterprise Linux, and tailored for enterprise environments.</li></ul>
+	<li><h4><ins>Arch Linux</ins></h4></li>
+        <ul><li>Known for its simplicity and customization, preferred by users who wish to build their system from the ground up.</li></ul>
+	
 </ul>
+<br>
+Exploring the unique package management systems like apt for Debian-based and dnf for Fedora-based distributions, which streamline the process of installing, updating, and removing software.
 
-Each tool provides a unique lens to view the network; mastering them is crucial for effective troubleshooting.
-
-<h2>Systematic Troubleshooting Methodology</h2>
-
-When faced with a network issue, jumping in and making changes is tempting. However, a systematic approach is critical: <br>
-
+<h2>The Path of Updates</h2>
+Updates are pivotal for maintaining system security, stability, and accessing new features. Learn the essentials of:<br>
 <ul>
-	<li>1. Identify Symptoms: Gather as much information as possible before anything else. </li>
 	<br>
-	<ul>
-		<li>Are certain users affected? </li><br>
-		<li>Is it a specific type of traffic or application?</li><br>
-	</ul>
-	<li>2. Isolate the Problem: Narrow down the cause. </li>
-	<br>
-	<ul>
-		<li>Is it a hardware failure? </li><br>
-		<li>A software glitch? </li><br>
-		<li>Or a misconfiguration?</li><br>
-	</ul>
-	<li>3. Implement Solutions: Once the root cause is identified, apply the necessary fix, whether replacing a faulty cable, updating software, or tweaking configurations.</li>
+	<li>Checking for updates using package managers.</li><br>
+	<li>Understanding the difference between system updates, upgrades, and distribution upgrades.</li><br>
+	<li>Applying updates and upgrades using commands like sudo apt update and sudo apt upgrade for Debian-based distributions, or sudo dnf check-update and sudo dnf upgrade for Fedora-based distributions.</li><br>
+	<li>Automating updates for enhanced security and reduced administrative overhead.</li>
 </ul>
 
 
-<h2>Recognizing Common Network Issues</h2>
-
-Experience teaches us that specific issues crop up more frequently than others:
-
-<ul>
-	<li><h4><ins>IP Conflicts:</ins></h4></li>
-	<ul>
-		<li>When two devices on the same network are assigned the same IP address.</li>
-	</ul>
-	<li><h4><ins>DNS Issues: </ins></h4></li>
-	<ul>
-		<li>Problems resolving domain names to IP addresses can prevent websites from loading.  </li>
-	</ul>
-	<li><h4><ins>Connectivity Losses: </ins></h4></li>
-	<ul>
-		<li>This can be due to many reasons, from physical cable damages to router malfunctions. </li>
-	</ul>
-	<li><h4><ins>Slow Performance:</ins></h4></li>
-	<ul>
-		<li>Often due to bandwidth limitations, high network traffic, or even malware.  </li>
-	</ul>
-	<li><h4><ins>Security Breaches: </ins></h4></li>
-	<ul>
-		<li>Unauthorized access or attacks on the network.</li>
-	</ul>
-</ul>
-
-By recognizing the signs of these common issues, you can often predict and prevent them from escalating.
-
-
-<h2>Implementing Preventative Measures</h2>
-As the saying goes, "An ounce of prevention is worth a pound of cure." In the realm of networks:
-<ul>
-	<li><h4><ins>Regular Updates: </ins></h4></li>
-	<ul>
-		<li>Ensure all devices and software are up-to-date. This not only provides new features but often patches known vulnerabilities.</li>
-	</ul>
-	<li><h4><ins>Backups:</ins></h4></li>
-	<ul>
-		<li>Regularly back up configurations and critical data. In the event of a failure, this can drastically reduce recovery time.  </li>
-	</ul>
-	<li><h4><ins>Monitoring:</ins></h4></li>
-	<ul>
-		<li>Use tools to monitor network traffic, performance, and anomalies constantly. This proactive approach can alert you to issues before they become critical.</li>
-	</ul>
-</ul>
-
-
-
-
-
-
-<h2>Conclusion</h2>
-
-Network troubleshooting is as much an art as it is a science. With a solid understanding of network fundamentals, mastery of diagnostic tools, a systematic approach, and a proactive mindset, you'll be well-equipped to tackle any network challenge that comes your way. Remember, in the world of networks, knowledge truly is power. Happy troubleshooting!
 
 
 
 <h2> Presentation</h2>
 
-
+<a href="https://docs.google.com/presentation/d/1pPwjFQ1pF2o5WkIRKpSvxjoyCu4TNmtp/edit?usp=sharing&ouid=110228847857413878764&rtpof=true&sd=true"> Kali Linux </a><br>
+<br>
+<a href="https://docs.google.com/presentation/d/1-vqchhnrlFpbk7WndvFJIecG1hf1dmKM/edit?usp=sharing&ouid=110228847857413878764&rtpof=true&sd=true">Introduction to Linux </a>
 
 
 <h2> Hands-On Labs</h2>
@@ -209,6 +160,6 @@ Network troubleshooting is as much an art as it is a science. With a solid under
 
 <h2> Additional Resources</h2>
 
-<a href="https://www.comptia.org/content/guides/a-guide-to-network-troubleshooting">A Guide to Network Troubleshooting</a> - Basic Steps, Tips and Tools. <br>
+<a href="https://drive.google.com/file/d/1Y_4AIFb7cOzNqxM6m60G-zdx_cu2zeER/view?usp=drive_link"> Linux Cheat Sheet</a>  <br>
 
-<a href="https://www.techtarget.com/searchnetworking/answer/What-are-the-3-most-common-network-issues-to-troubleshoot">Most Common Network Issues </a> - Slow network speeds, weak Wi-Fi signals and damaged cabling are just some of the most common network connection issues that IT departments need to troubleshoot.
+
