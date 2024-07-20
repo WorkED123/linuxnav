@@ -145,7 +145,37 @@ Updates are pivotal for maintaining system security, stability, and accessing ne
 </ul>
 
 
+<h2>Conclusion</h2>
+Understanding how to navigate Linux is crucial for effectively managing and troubleshooting systems, as it empowers users to perform tasks efficiently, leverage powerful command-line tools, and maintain control over a highly customizable and secure operating environment. Proficiency in Linux navigation not only enhances system administration skills but also opens up opportunities for advanced configurations and automation, making it an invaluable asset for both IT professionals and enthusiasts.
 
+<h2>Definitions</h2>
+<ul>
+<li><b>Package Manager:</b> A tool that automates the installation, updating, configuration, and removal of software packages on an operating system.<br>
+<br>
+
+<li><b>Update & Upgrade:</b> Processes for refreshing and improving software or system components; "update" typically refers to installing the latest version of software, while "upgrade" involves moving to a newer major version.<br>
+<br>
+
+<li><b>Repository:</b> A storage location for software packages and related metadata, where package managers retrieve and manage software.<br>
+<br>
+
+<li><b>Root Directory:</b> The top-level directory in a file system hierarchy from which all other directories and files branch out.<br>
+<br>
+
+<li><b>Path:</b> The sequence of directories that leads to a specific file or directory within a file system.<br>
+<br>
+
+<li><b>Relative Path:</b> A file path that is relative to the current working directory, not starting from the root directory.<br>
+<br>
+
+<li><b>Linux Distribution:</b> A version of the Linux operating system that includes the Linux kernel along with additional software and package management tools, tailored for specific needs or purposes.<br>
+<br>
+
+<li><b>File System:</b> The structure and method used by an operating system to store, organize, and manage files on storage devices.<br>
+<br>
+
+<li><b>Directory:</b> A folder within a file system used to organize and contain files and other directories.	
+</ul>
 
 
 <h2> Presentation</h2>
@@ -157,7 +187,7 @@ Updates are pivotal for maintaining system security, stability, and accessing ne
 
 <h2> Hands-On Labs</h2>
 
-
+<h2>Games</h2>
 <h2> Additional Resources</h2>
 
 <a href="https://drive.google.com/file/d/1Y_4AIFb7cOzNqxM6m60G-zdx_cu2zeER/view?usp=drive_link"> Linux Cheat Sheet</a>  <br>
